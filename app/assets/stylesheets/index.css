@@ -1,0 +1,45 @@
+.index-container {
+    width: 80vw;
+    min-width: min-content;
+    
+    margin: 0 auto;
+}
+
+.index-container div {
+    padding: 15px 30px;
+    border-radius: 6px;
+}
+
+.index-title {
+    text-align: center;
+}
+
+#intro-container {
+    background-color: var(--tan-green);
+    text-align: justify;
+}
+
+#intro-container p:first-of-type {
+    text-indent: 40px;
+}
+
+#articles-container {
+    background-color: var(--light-green);
+    width: fit-content;
+    margin: 40px auto;
+    text-align: center;
+    padding: 30px 50px;
+}
+#new-article-btn a {
+    text-align: center;
+}
+
+#articles-heading {
+    margin-top: 10px;
+}
+
+.index-articles {
+    list-style-type: none;
+    text-decoration: underline;
+    padding: 0;
+}

@@ -30,6 +30,6 @@
     text-decoration: none;
  }
 
- li {
-    list-style:square;
+ h1, h2, h3 {
+    color: var(--green)
  }

@@ -1,10 +1,9 @@
 <div class="index-container">
-    
     <div>
         <h1 class="index-title">My Blog</h1>
     </div>
 
-    <div>
+    <div id="intro-container">
         <h3>Introduction</h3>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices condimentum felis, id commodo eros tempus in. Quisque porttitor interdum neque, et vulputate erat commodo et. Integer blandit, libero vel finibus lacinia, turpis massa mollis eros, ut tempor ligula est vel nisi. Vivamus feugiat est odio, non viverra augue maximus a. Vestibulum lacinia, justo in vestibulum interdum, nulla tellus commodo nunc, sed feugiat nibh nisi eget massa. Aliquam felis odio, sagittis sed libero quis, accumsan efficitur eros. Pellentesque accumsan malesuada libero a interdum. Suspendisse sit amet imperdiet ligula, eget scelerisque purus. Praesent vel leo congue, tempor lorem vitae, facilisis augue. Vivamus facilisis enim ut nibh varius, ut suscipit neque tristique. Nunc vel mi in lacus suscipit mattis a aliquam purus.
         </p>
@@ -13,8 +12,8 @@
         </p>
     </div>    
 
-    <div>
-        <h3>Articles</h3>
+    <div id="articles-container">
+        <h3 id="articles-heading">Articles</h3>
         <ul class="index-articles">
             <% @articles.each do |article| %>
                 <li>
@@ -22,6 +21,6 @@
                 </li>
             <% end %>
         </ul>
-        <button><%= link_to "New Article", new_article_path %></button>
+        <button id="new-article-btn"><%= link_to "New Article", new_article_path %></button>
     </div>
 </div>

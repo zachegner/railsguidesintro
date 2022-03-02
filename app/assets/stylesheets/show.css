@@ -1,10 +1,20 @@
 .article-container {
-    background-color: var(--green);
-    padding: 30px;
+    text-align: center;
 }
 
 .article-title {
     text-decoration: underline;
+}
+
+.article-body {
+    width: 60vw;
+    min-width: min-content;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.comment-container {
+    margin-left: 50px;
 }
 
 #home-link {
