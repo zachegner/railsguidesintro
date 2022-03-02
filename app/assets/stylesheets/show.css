@@ -1,0 +1,13 @@
+.article-container {
+    background-color: var(--green);
+    padding: 30px;
+}
+
+.article-title {
+    text-decoration: underline;
+}
+
+#home-link {
+    font-weight: 700;
+    text-decoration: underline;
+ }

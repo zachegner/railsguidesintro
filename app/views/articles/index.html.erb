@@ -1,11 +1,27 @@
-<h1>Articles</h1>
+<div class="index-container">
+    
+    <div>
+        <h1 class="index-title">My Blog</h1>
+    </div>
 
-<ul>
-    <% @articles.each do |article| %>
-        <li>
-            <%= link_to article.title, article %>
-        </li>
-    <% end %>
-</ul>
+    <div>
+        <h3>Introduction</h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices condimentum felis, id commodo eros tempus in. Quisque porttitor interdum neque, et vulputate erat commodo et. Integer blandit, libero vel finibus lacinia, turpis massa mollis eros, ut tempor ligula est vel nisi. Vivamus feugiat est odio, non viverra augue maximus a. Vestibulum lacinia, justo in vestibulum interdum, nulla tellus commodo nunc, sed feugiat nibh nisi eget massa. Aliquam felis odio, sagittis sed libero quis, accumsan efficitur eros. Pellentesque accumsan malesuada libero a interdum. Suspendisse sit amet imperdiet ligula, eget scelerisque purus. Praesent vel leo congue, tempor lorem vitae, facilisis augue. Vivamus facilisis enim ut nibh varius, ut suscipit neque tristique. Nunc vel mi in lacus suscipit mattis a aliquam purus.
+        </p>
+        <p>
+        Cras sagittis ornare vestibulum. Vestibulum iaculis eleifend sapien, non tempor nibh efficitur ut. Maecenas maximus quam tristique tincidunt mattis. Vestibulum at efficitur justo. Curabitur augue massa, sollicitudin vitae nisl quis, elementum tincidunt ipsum. Maecenas molestie porttitor aliquam. Donec at venenatis metus, vel ornare augue. Suspendisse eleifend et neque nec convallis. Aenean a sollicitudin sapien. Aenean maximus neque rutrum, aliquet purus venenatis, ornare ligula. Maecenas placerat augue vel odio iaculis, in ullamcorper risus ultricies. Cras lacinia nunc vitae lacus ultrices, ac euismod mi fermentum. Sed pretium neque metus, quis rhoncus magna porttitor sit amet. Donec dictum pulvinar est, sed cursus elit sagittis ut. Phasellus egestas, dolor eu eleifend lacinia, quam justo scelerisque odio, in maximus mauris mauris a nulla.
+        </p>
+    </div>    
 
-<%= link_to "New Article", new_article_path %>
+    <div>
+        <h3>Articles</h3>
+        <ul class="index-articles">
+            <% @articles.each do |article| %>
+                <li>
+                    <%= link_to article.title, article %>
+                </li>
+            <% end %>
+        </ul>
+        <button><%= link_to "New Article", new_article_path %></button>
+    </div>
+</div>

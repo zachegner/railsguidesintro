@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+ :root {
+    --green: #193E2C;
+    --light-green: #8AA27E;
+    --tan-green: #B9C7A6;
+    --tan: #EAEED5;
+ }
+
+ html {
+    font-family: 'Fredoka', sans-serif;
+    background-color: var(--tan);
+ }
+
+ a {
+    color: inherit;
+    text-decoration: none;
+ }
+
+ li {
+    list-style:square;
+ }
